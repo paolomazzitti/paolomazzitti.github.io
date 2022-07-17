@@ -38,9 +38,20 @@ body {
 	animation: 1s blink step-end infinite;
 }
 
+.blinking-cursor-light {
+	font-size: 1em;
+	color: #FAFAFA;
+	-webkit-animation: 1s blinklight step-end infinite;
+	-moz-animation: 1s blinklight step-end infinite;
+	-ms-animation: 1s blinklight step-end infinite;
+	-o-animation: 1s blinklight step-end infinite;
+	animation: 1s blinklight step-end infinite;
+}
+
 .fixed {
 	color:#282828
 }
+
 @keyframes blink {
 	from,
 	to {
@@ -48,6 +59,16 @@ body {
 	}
 	50% {
 		color: #282828;
+	}
+}
+
+@keyframes blinklight {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #FAFAFA;
 	}
 }
 
