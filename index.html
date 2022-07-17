@@ -6,33 +6,13 @@
 </head>
 
 <body>
-
-    <div id="text">Hi, I'm <a id="glow-text"></a>
+    <div id="container">
+        <div id="content">
+            <span class="typing"></span>
+            <span class="blinking-cursor">|</span>
+        </div>
     </div>
-
-    <script>
-        var i = 0;
-        var txt = ' Paolo ';
-        var speed = 200;
-        var emote = '👨🏻‍💻'
-
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-
-        async function typing() {
-            while (i < txt.length) {
-                await sleep(speed)
-                document.getElementById("glow-text").innerHTML += txt.charAt(i);
-                i++;
-            }
-            await sleep(speed*3)
-            document.getElementById("text").innerHTML += emote;
-            txt = document.querySelector('#glow-text');
-            txt.href="https://github.com/paolomazzitti";
-        }
-        typing()
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
