@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Space Mono', monospace;
 	font-weight: 700;
-	font-size: 80px;
+	font-size: 30px;
+
 	background-color: #FAFAFA;
 }
 
@@ -19,16 +20,9 @@ body {
 	color: #282828;
 }
 
-.gradient-text{
-	background: -webkit-linear-gradient(45deg, rgb(251, 54, 54), rgb(240, 155, 51));
-  	-webkit-background-clip: text;
-	background-clip: text;
-  	-webkit-text-fill-color: transparent;
-	/* text-shadow: 1px 1px 5px #2E3D48;  */
-
-}
-
 .blinking-cursor {
+	position: relative;
+	left: -0.5em;
 	font-size: 1em;
 	color: #282828;
 	-webkit-animation: 1s blink step-end infinite;
@@ -36,16 +30,6 @@ body {
 	-ms-animation: 1s blink step-end infinite;
 	-o-animation: 1s blink step-end infinite;
 	animation: 1s blink step-end infinite;
-}
-
-.blinking-cursor-light {
-	font-size: 1em;
-	color: #FAFAFA;
-	-webkit-animation: 1s blinklight step-end infinite;
-	-moz-animation: 1s blinklight step-end infinite;
-	-ms-animation: 1s blinklight step-end infinite;
-	-o-animation: 1s blinklight step-end infinite;
-	animation: 1s blinklight step-end infinite;
 }
 
 .fixed {
@@ -62,15 +46,6 @@ body {
 	}
 }
 
-@keyframes blinklight {
-	from,
-	to {
-		color: transparent;
-	}
-	50% {
-		color: #FAFAFA;
-	}
-}
 
 @-moz-keyframes blink {
 	from,
